@@ -27,17 +27,18 @@
 ----
 
 <link href="./assets/style.css" rel="stylesheet"/>
+
 <style type="text/css">
   .footer a {
-    display: block;
-}
+      display: block;
+  }
 
-@media (min-width: 640px) {
-    .footer {
-        display: flex;
-        justify-content: space-between;
-    }
-}
+  @media (min-width: 640px) {
+      .footer {
+          display: flex;
+          justify-content: space-between;
+      }
+  }
 </style>
 
 <div class="footer">
