@@ -20,10 +20,8 @@
 
 ----
 
-<link href="./assets/style.css" rel="stylesheet"/>
-
 <div class="footer">
-<a href="./README.md">Inicio</a>
-<a href="./Layer1_Besu.md">Layer 1 - Hyperledger Besu Emulation (Opcional)</a>
-<a href="./Environment_Setup.md">Configuração do ambiente Demo</a>
+   <p><a href="./Environment_Setup.md">Configuração do ambiente Demo</a></p>
+   <p><a href="./Layer1_Besu.md">Layer 1 - Hyperledger Besu Emulation (Opcional)</a></p>
+   <p><a href="./README.md">Inicio</a></p>
 </div>

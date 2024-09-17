@@ -20,10 +20,8 @@
 
 ----
 
-<link href="./assets/style.css" rel="stylesheet"/>
-
-<div class="footer">
-  <a href="./README.md">Inicio</a>
-  <a href="./Installation.md">Instalação</a>
-  <a href="./Layer2_Nodes.md">Layer 2 - Rollup node</a>
+<div class="footer right">
+  <p><a href="./Layer2_Nodes.md">Layer 2 - Rollup node</a></p>
+  <p><a href="./Installation.md">Instalação</a></p>
+  <p><a href="./README.md">Inicio</a></p>
 </div>

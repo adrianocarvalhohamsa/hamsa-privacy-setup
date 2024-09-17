@@ -106,10 +106,7 @@ npm run test-L2-available
 
 ----
 
-<link href="./assets/style.css" rel="stylesheet"/>
-
 <div class="footer">
-<a href="./README.md">Inicio</a>
-<a href="./Environment_Setup.md">Configuração do ambiente Demo</a>
-<a href=""></a>
+<p><a href="./Environment_Setup.md">Configuração do ambiente Demo</a></p>
+<p><a href="./README.md">Inicio</a></p>
 </div>

@@ -26,22 +26,7 @@
 
 ----
 
-<link href="./assets/style.css" rel="stylesheet"/>
-
-<style type="text/css">
-  .footer a {
-      display: block;
-  }
-
-  @media (min-width: 640px) {
-      .footer {
-          display: flex;
-          justify-content: space-between;
-      }
-  }
-</style>
-
 <div class="footer">
-  <a href="./README.md">Início</a>
-  <a href="./Installation.md">Instalação</a>
+  <p><a href="./Installation.md">Instalação</a></p>
+  <p><a href="./README.md">Início</a></p>
 </div>

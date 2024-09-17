@@ -15,11 +15,10 @@
 
 ----
 
-<link href="./assets/style.css" rel="stylesheet"/>
 
 <div class="footer">
-    <a href="./README.md">Início</a>
-    <a href="./Requirements.md">Pré-requisitos</a>
-    <a href="./Layer1_Besu.md">Layer 1 - Hyperledger Besu Emulation (Opcional)</a>
+    <p><a href="./Layer1_Besu.md">Layer 1 - Hyperledger Besu Emulation (Opcional)</a></p>
+    <p><a href="./Requirements.md">Pré-requisitos</a></p>
+    <p><a href="./README.md">Início</a></p>
 </div>
 

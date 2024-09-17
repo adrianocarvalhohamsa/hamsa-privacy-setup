@@ -1,8 +1,4 @@
-<div class="header">
-  <h1>Hamsa Privacy</h1>
-  <img class="equation logos" src="./media/logo_partnership.png" />
-  <img class="equation logos_dark" src="./media/logo_partnership_dark.png" />
-</div>
+<img src="./assets/header.svg" width="100%" height="auto"/>
 
 # Configuração do ambiente Demo
 
@@ -60,13 +56,11 @@
 
 ----
 
-<link href="./assets/style.css" rel="stylesheet"/>
-
 
 <div class="footer">
-<a href="./README.md">Inicio</a>
-<a href="./Layer2_Nodes.md">Layer 2 - Rollup node</a>
-<a href="./Nodes_Deployment.md">Implantação dos Nodes</a>
+<p><a href="./Nodes_Deployment.md">Implantação dos Nodes</a></p>
+<p><a href="./Layer2_Nodes.md">Layer 2 - Rollup node</a></p>
+<p><a href="./README.md">Inicio</a></p>
 </div>
 
 
