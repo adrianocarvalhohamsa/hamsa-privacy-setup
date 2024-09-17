@@ -1,3 +1,8 @@
+<div class="header">
+  <h1>Hamsa Privacy</h1>
+  <img class="equation" src="./media/logo_partnership.png" />
+</div>
+
 # Implantação os nodes
 
 Abaixo serão implantados 3 nodes, Banco A, Banco B e Banco Central/SELIC. O processo é semelhante para todos os nodes.
@@ -104,6 +109,10 @@ npm run test-L2-available
 
 ----
 
-[Configuração do ambiente Demo](./Environment_Setup.md)
+<link href="./assets/style.css" rel="stylesheet"/>
 
-[Inicio](./README.md) 
+<div class="footer">
+<a href="./README.md">Inicio</a>
+<a href="./Environment_Setup.md">Configuração do ambiente Demo</a>
+<a href=""></a>
+</div>

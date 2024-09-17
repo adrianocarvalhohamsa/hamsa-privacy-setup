@@ -1,3 +1,8 @@
+<div class="header">
+  <h1>Hamsa Privacy</h1>
+  <img class="equation" src="./media/logo_partnership.png" />
+</div>
+
 # <a name="layer-1---hyperledger-besu"></a> Layer 1 - Hyperledger Besu
 
 1. Faça o download do arquivo ```besu-qbft-docker.zip``` e extraia seu conteúdo.
@@ -18,9 +23,10 @@
 
 ----
 
+<link href="./assets/style.css" rel="stylesheet"/>
 
-[Layer 2 - Rollup node](./Layer2_Nodes.md)
-
-[Instalação](./Installation.md)
-
-[Inicio](./README.md)  
+<div class="footer">
+  <a href="./README.md">Inicio</a>
+  <a href="./Installation.md">Instalação</a>
+  <a href="./Layer2_Nodes.md">Layer 2 - Rollup node</a>
+</div>

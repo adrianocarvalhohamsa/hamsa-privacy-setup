@@ -1,14 +1,19 @@
+<div class="header">
+  <h1>Hamsa Privacy</h1>
+  <img class="equation" src="./media/logo_partnership.png" />
+</div>
+
 # Pré-requisitos
 
 ### Hardware
 
-|Micro-service | Hardware requirement|
-|--|--|
-|L1 node | 4 core  & 8 G memory|
-|L2 node 1 | 8 core  & 8 G memory|
-|L2 node 2 | 8 core  & 8 G memory|
-|L2 node 3 | 8 core  & 8 G memory|
-|prover | 8 core & 16 G memory|
+| Micro-service | Hardware requirement |
+| ------------- | -------------------- |
+| L1 node       | 4 core  & 8 G memory |
+| L2 node 1     | 8 core  & 8 G memory |
+| L2 node 2     | 8 core  & 8 G memory |
+| L2 node 3     | 8 core  & 8 G memory |
+| prover        | 8 core & 16 G memory |
 
 
 
@@ -24,6 +29,9 @@
 
 ----
 
-[Instalação](./Installation.md)
+<link href="./assets/style.css" rel="stylesheet"/>
 
-[Início](./README.md)
+<div class="footer">
+  <a href="./README.md">Início</a>
+  <a href="./Installation.md">Instalação</a>
+</div>

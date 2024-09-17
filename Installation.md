@@ -1,3 +1,8 @@
+<div class="header">
+  <h1>Hamsa Privacy</h1>
+  <img class="equation" src="./media/logo_partnership.png" />
+</div>
+
 # Instalação
 
 ## Material base da instalação
@@ -13,9 +18,11 @@
 
 ----
 
-[Layer 1 - Hyperledger Besu Emulation (Opcional)](./Layer1_Besu.md)
+<link href="./assets/style.css" rel="stylesheet"/>
 
-[Pré-requisitos](./Requirements.md)
-
-[Início](./README.md)
+<div class="footer">
+    <a href="./README.md">Início</a>
+    <a href="./Requirements.md">Pré-requisitos</a>
+    <a href="./Layer1_Besu.md">Layer 1 - Hyperledger Besu Emulation (Opcional)</a>
+</div>
 

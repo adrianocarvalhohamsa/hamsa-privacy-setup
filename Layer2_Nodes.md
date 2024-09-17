@@ -1,3 +1,7 @@
+<div class="header">
+  <h1>Hamsa Privacy</h1>
+  <img class="equation" src="./media/logo_partnership.png" />
+</div>
 
 # Layer 2 - Docker images dos nodes privados
 
@@ -19,9 +23,10 @@
 
 ----
 
-[Configuração do ambiente Demo](./Environment_Setup.md)
+<link href="./assets/style.css" rel="stylesheet"/>
 
-[Layer 1 - Hyperledger Besu Emulation (Opcional)](./Layer1_Besu.md)
-
-[Inicio](./README.md)  
-   
+<div class="footer">
+<a href="./README.md">Inicio</a>
+<a href="./Layer1_Besu.md">Layer 1 - Hyperledger Besu Emulation (Opcional)</a>
+<a href="./Environment_Setup.md">Configuração do ambiente Demo</a>
+</div>

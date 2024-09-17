@@ -1,3 +1,9 @@
+<div class="header">
+  <h1>Hamsa Privacy</h1>
+  <img class="equation logos" src="./media/logo_partnership.png" />
+  <img class="equation logos_dark" src="./media/logo_partnership_dark.png" />
+</div>
+
 # Configuração do ambiente Demo
 
 1. Faça o download do arquivo do link abaixo e extraia seu conteúdo:
@@ -8,7 +14,7 @@
     ```bash
     cd hamsa-privacy-demo
     ```
-### <a name="hardhat-settings"></a> Configuração do arquivo hardhat.config.js
+### Configuração do arquivo hardhat.config.js
 
 1. Abra o arquivo hardhat.config.js em seu software de edição de preferência e atualize-o com o IP do docker host.
 
@@ -16,7 +22,7 @@
 
 2. As chaves privadas das contas na Layer 1 não precisam ser modificadas. Caso você esteja usando sua própria blockchain Layer 1, atualize o arquivo com as sua próprias chaves.
 
-### <a name="contracts-compilation"></a>Compilação dos smart contracts, Implantação do DVP-Match e Rollup na Layer 1
+### Compilação dos smart contracts, Implantação do DVP-Match e Rollup na Layer 1
 
 1. Execute os seguintes comandos para realizar instalação das dependências e compilar os smart contracts
     
@@ -35,7 +41,7 @@
     npm run deploy-dvp-match-server-L1
     ```
 
-    O resultado esperado será seguindo o seguindo o exemplo abaixo:<a name="dvp-math-hash" />
+    O resultado esperado será seguindo o seguindo o exemplo abaixo:
 
     ![L1MatchScAddress output](./media/L1MatchScAddress_deployed.png "Resultado da implantação do DVP-Match e Rollup")
 
@@ -54,8 +60,13 @@
 
 ----
 
-[Implantação dos Nodes](./Nodes_Deployment.md)
+<link href="./assets/style.css" rel="stylesheet"/>
 
-[Layer 2 - Rollup node](./Layer2_Nodes.md)
 
-[Inicio](./README.md)  
+<div class="footer">
+<a href="./README.md">Inicio</a>
+<a href="./Layer2_Nodes.md">Layer 2 - Rollup node</a>
+<a href="./Nodes_Deployment.md">Implantação dos Nodes</a>
+</div>
+
+

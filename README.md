@@ -1,3 +1,7 @@
+<div class="header">
+  <h1>Hamsa Privacy</h1>
+  <img class="equation" src="./media/logo_partnership.png" />
+</div>
 
 # Hamsa Privacy built on Microsoft Nova ZKP
 
@@ -29,3 +33,4 @@ Hamsa Privacy é uma solução de privacidade de ponta, construída sobre a tecn
 7. [Testes de Casos de uso](.#)
 
 
+<link href="./assets/style.css" rel="stylesheet"/>
