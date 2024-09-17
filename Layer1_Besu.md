@@ -1,7 +1,4 @@
-<div class="header">
-  <h1>Hamsa Privacy</h1>
-  <img class="equation" src="./media/logo_partnership.png" />
-</div>
+<img src="./assets/header.svg" width="100%" height="auto"/>
 
 # <a name="layer-1---hyperledger-besu"></a> Layer 1 - Hyperledger Besu
 
