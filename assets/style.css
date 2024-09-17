@@ -36,7 +36,7 @@
     }
 
     .logos {
-        display: none;
+        display: none !important;
     }
 
     .logos_dark {
