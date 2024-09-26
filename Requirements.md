@@ -4,22 +4,29 @@
 
 ### Hardware
 
-| Micro-service | Hardware requirement |
-| ------------- | -------------------- |
-| L1 node       | 4 core  & 8 G memory |
-| L2 node 1     | 8 core  & 8 G memory |
-| L2 node 2     | 8 core  & 8 G memory |
-| L2 node 3     | 8 core  & 8 G memory |
-| prover        | 8 core & 16 G memory |
+> Waiting
+<!-- 
+| Micro-service | Hardware requirement  |
+| ------------- | --------------------- |
+| L1 node       | 4 core  & 8 G memory  |
+| L2 nodes      | 8 core  & 16 G memory |
+| prover        | 8 core & 16 G memory  |
+-->
 
+
+### Arquitetura
+
+Solução foi arquitetada para performar sob plataforma Debian.
 
 
 ### Software
 
-- Docker
-  - imagens preparadas para ambiente Debian
-- Make software
-- Nodejs 20.17.0+
+- [Docker](https://docs.docker.com/engine/install/)
+- [Docker compose](https://docs.docker.com/compose/install/)
+- [Nodejs 20.17.0+](https://nodejs.org/en/download/package-manager)
+
+
+<br/>
 
 > ATENÇÃO: Para a conclusão dos procedimentos a seguir, é necessário o uso de um programa de linha de comando e que o perfil tenha permissões para que os comandos sugeridos sejam executados sem restrições que comprometam a instalação e/ou execução dos testes.
 
@@ -27,6 +34,9 @@
 ----
 
 <div class="footer">
-  <p><a href="./Installation.md">Instalação</a></p>
-  <p><a href="./README.md">Início</a></p>
+
+  [Instalação >](Installation.md)
+
+  [Início](README.md)
+
 </div>
