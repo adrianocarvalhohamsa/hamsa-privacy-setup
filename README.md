@@ -19,9 +19,9 @@ Hamsa Privacy é uma solução de privacidade de ponta, construída sobre a tecn
 
 2. [Instalação](./Installation.md)
 
-3.  [Layer 1 - Hyperledger Besu Emulation (Opcional)](./Layer1_Besu.md)
+3. [Layer 1 - Hyperledger Besu](./Layer1_Besu.md)
 
-4.  [Layer 2 - Rollup node](./Layer2_Nodes.md)
+4. [Layer 1 - Node privado](./Layer2_Nodes.md)
 
 5. [Configuração do ambiente Demo](./Environment_Setup.md)
 

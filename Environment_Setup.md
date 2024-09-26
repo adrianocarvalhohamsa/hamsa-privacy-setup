@@ -59,7 +59,7 @@
 
 <div class="footer">
 <p><a href="./Nodes_Deployment.md">Implantação dos Nodes</a></p>
-<p><a href="./Layer2_Nodes.md">Layer 2 - Rollup node</a></p>
+<p><a href="./Layer2_Nodes.md">Layer 1 - Node privado</a></p>
 <p><a href="./README.md">Inicio</a></p>
 </div>
 
