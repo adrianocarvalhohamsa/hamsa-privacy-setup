@@ -4,14 +4,41 @@
 
 ### Hardware
 
-> Waiting
-<!-- 
-| Micro-service | Hardware requirement  |
-| ------------- | --------------------- |
-| L1 node       | 4 core  & 8 G memory  |
-| L2 nodes      | 8 core  & 16 G memory |
-| prover        | 8 core & 16 G memory  |
--->
+<svg fill="none" viewBox="0 0 100% 112" width="100%" height="112" xmlns="http://www.w3.org/2000/svg">
+
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style type="text/css">
+        table.table {
+          width: 100%!important;
+          display: table!important;
+          max-width: inherit
+        }
+      </style>
+      <table class="table">
+        <thead>
+        <tr>
+        <th>Microsserviço</th>
+        <th>Hardware requerido</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>L1 node</td>
+        <td>4 vCPUs | core  &amp; 8Gb de memória RAM</td>
+        </tr>
+        <tr>
+        <td>L2 nodes</td>
+        <td>8 vCPUs | core  &amp; 32Gb de memória RAM (16Gb mínimo para testes)</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </foreignObject>
+  
+</svg>
+
+<!-- | prover        | 8 core & 16 G memory  |-->
 
 
 ### Arquitetura

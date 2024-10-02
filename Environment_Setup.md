@@ -4,11 +4,11 @@
 
 1. Faça o download do arquivo do link abaixo e extraia seu conteúdo:
    
-   ```hamsa-privacy-demo.zip```
+   ```hamsa-msft-demo.zip```
 
 2. Pelo prompt de comando, acesse o diretório:
     ```bash
-    cd hamsa-privacy-demo
+    cd hamsa-msft-demo
     ```
 ### Configuração do arquivo hardhat.config.js
 
@@ -59,7 +59,7 @@
 
 <div class="footer">
 <p><a href="./Nodes_Deployment.md">Implantação dos Nodes</a></p>
-<p><a href="./Layer2_Nodes.md">Layer 1 - Node privado</a></p>
+<p><a href="./Layer2_Nodes.md">Node privado - Layer 2</a></p>
 <p><a href="./README.md">Inicio</a></p>
 </div>
 
