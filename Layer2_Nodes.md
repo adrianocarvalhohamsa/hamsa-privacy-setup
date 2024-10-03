@@ -22,7 +22,7 @@ A ZK-Rollup é composta por microsserviços e componentes, ou seja, cada institu
    2. ```hamsa-msft-executor:<version>.tar``` 
    3. ```hamsa-msft-prover:<version>.tar```
 
-2. Com cada arquivo acima, navegue via prompt de comando para a pasta destino dos downloads acima e execute o seguintes comandos:
+2. Para cada arquivo acima execute o seguintes comandos:
      
     ```bash
     docker load -i hamsa-msft-node:<version>.tar

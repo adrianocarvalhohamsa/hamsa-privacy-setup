@@ -1,10 +1,19 @@
 <img src="./assets/header.svg" width="100%" height="auto"/>
 
-# Implantação os nodes
+# Implantação de ZK-Rollup
 
-Abaixo serão implantados 3 nodes: Banco Central/SELIC, Instituição A e Instituição B. O processo é semelhante para todos os nodes.
+Abaixo serão implantados três servidores de ZK-Rollup: Banco Central/SELIC, Instituição A e Instituição B. O processo é semelhante para todos os nós.
 
-Os parâmetros de configuração necessários para cada node são declarados em arquivos `.env`. No arquivo `hardhat.config.js` já existem chaves privadas representando contas.
+1. Realize a extração do aquivo abaixo:
+   
+   ```hamsa-msft-demo.zip```
+
+2. Através de linha de comando, acesse o diretório:
+    ```bash
+    cd hamsa-msft-demo
+    ```
+
+Os parâmetros de configuração necessários para cada node são declarados em arquivos `./server/node{1, 2 ou  3}/.env`. 
 
 ![Arquivos .env que devem ser alterados em ./server/node1, ./server/node2 and ./server/node3](./media/nodes_env.png "Arquivos .env que devem ser alterados em ./server/node1, ./server/node2 and ./server/node3") 
 
@@ -14,14 +23,14 @@ Os parâmetros de configuração necessários para cada node são declarados em 
 >
 > ATENÇÃO: As chaves mencionadas acima devem estar no arquivo `hardhat.config.js` em `networks.server_L1_besu.accounts`
 
-### Implantação rápida
+### <a name="one-host-deployment"></a>Implantação rápida (em um mesmo host)
 
-Para que em um processo só os 3 nodes sejam implantados no mesmo ambiente (exemplo: docker local) siga os passos abaixo:
+Para que em um processo só os 3 nodes sejam implantados no host (exemplo: docker local) siga os passos abaixo:
 
 1. Abra o arquivo `.env` localizado na raiz do diretório;
-2. Altere as variáveis abaixo:
-   - `L1_URL`: Endereço do serviço Layer 1.
-   - `DVP_L1MATCHSCADDRESS`: Hash de implantação da Layer 1 (veja em: [Compilação dos smart contracts, Implantação do DVP-Match e Rollup na Layer 1](#dvp-math-hash))
+2. Altere a variável abaixo:
+   - `L1_URL`: Endereço do servidor Hyperledger Besu;
+   - `CHAINID`: CHAINID do seu ambiente Hyperledger Besu;
    
    Execute o comando abaixo para implantar todos os serviços juntos:
     ```bash
@@ -30,7 +39,6 @@ Para que em um processo só os 3 nodes sejam implantados no mesmo ambiente (exem
 
     > Não esqueça de conferir se todos os serviços foram iniciados. Por exemplo: `docker ps --format 'Image: {{.Image}} | Name: {{.Names}} | Image:  {{.Image}}'`
 
-    ![Lista dos nodes implantados](./media/deployed_nodes.png "Exemplo da lista dos nodes implantados")
 
 ### Implantando os nodes de modo segregado
 

@@ -2,11 +2,11 @@
 
 # Configuração do ambiente Demo
 
-1. Faça o download do arquivo do link abaixo e extraia seu conteúdo:
+1. Realize a extração do aquivo abaixo:
    
    ```hamsa-msft-demo.zip```
 
-2. Pelo prompt de comando, acesse o diretório:
+2. Através de linha de comando, acesse o diretório:
     ```bash
     cd hamsa-msft-demo
     ```
