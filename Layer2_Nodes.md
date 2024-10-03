@@ -44,7 +44,7 @@ Este comando adicionará as imagens ao repositório Docker local e as disponibil
 ----
 
 <div class="footer">
-   <p><a href="./Environment_Setup.md">Configuração do ambiente Demo</a></p>
+   <p><a href="./Environment_Setup.md">Configuração do ambiente Demo e pré-configuração do ZK-Rollup</a></p>
    <p><a href="./Layer1_Besu.md">Hyperledger Besu  - Camada 1</a></p>
    <p><a href="./README.md">Inicio</a></p>
 </div>

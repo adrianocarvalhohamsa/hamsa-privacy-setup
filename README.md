@@ -23,9 +23,11 @@ A solução ZK-Rollup foi projetada especificamente para a plataforma Drex no Br
 
 4. [ZK-Rollup - Camada 2](./Layer2_Nodes.md)
 
-5. [Configuração do ambiente Demo](./Environment_Setup.md)
+5. [Configuração do ambiente Demo e pré-configuração do ZK-Rollup](./Environment_Setup.md)
 
-6. [Implantação dos Nodes](./Nodes_Deployment.md)
+6. [Implantação de ZK-Rollup](./Nodes_Deployment.md)
+
+7. [Finalização da configuração do ambiente demo](./Nodes_Deployment.md)
 
 
 ## Glossário 

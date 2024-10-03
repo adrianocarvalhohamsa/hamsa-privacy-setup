@@ -1,18 +1,22 @@
 <img src="./assets/header.svg" width="100%" height="auto"/>
 
-# Implantação os Nodes
+# Implantação de ZK-Rollup
 
 #### Cenários de instalação
 
-[Implantação de ZK-Rollup em máquina virtual.](#starting-up-node)
+[Implantação de ZK-Rollup em máquina virtual dedicada](#starting-up-node)
 
-[Implantação de servidores ZK-Rollup em umúnico servidor](#nodes-same-host)
+[Implantação de ZK-Rollup em um único servidor](#nodes-same-host)
 
 ---
 
 <!-- Após o preenchimento requerido na [etapa anterior](./Environment_Setup.md) para cada Node, cada um poderá ser inicializado: -->
 
 ### <a name="starting-up-node"></a>Inicializando cada Node em sua determinada máquina virtual.
+
+Este processo de instalação prevê que cada nó ZK-Rollup seja instaladao em uma máquian virtual diferente.
+
+<br />
 
 > Ainda na pasta do demo, os parâmetros de configuração necessários para cada node são declarados em arquivos `./server/node{1,2 ou 3}/.env`.
 > 
@@ -52,6 +56,10 @@ O resultado semelhante a imagem acima afirma que os serviços foram inicializado
 
 ### <a name="nodes-same-host"></a>Implantação de servidores ZK-Rollup em um único servidor
 
+Este cenário de instalação prevê a implantação de todos os nós de ZK-Rollup em mesmo host.
+
+<br />
+
 > Ainda na pasta do demo, os parâmetros de configuração necessários estão no arquivo `.env` na raiz do diretório.
 > 
 > `L1_URL` deve ser preenchido com o IP/URI do Hyperledger Besu. Exemplo: <IP | URI>:8545 \
@@ -83,9 +91,9 @@ Para que em um processo só os 3 nodes sejam implantados no host (exemplo: docke
 ### Troubleshooting
 
 1) Em caso de atualização do versão das imagens, se faz necessário:
-    - descarregue as novas imagens na maquina virtual;
+    - descarregue as novas imagens;
 
-    - interromper os serviços;
+    - interrompa os serviços;
 
       ```bash
       docker-compose down
@@ -96,14 +104,17 @@ Para que em um processo só os 3 nodes sejam implantados no host (exemplo: docke
       docker load -i ./<local da imagem>hamsa-msft-{executor | node | prover}:<version>
       ```
 
-    - atualizar o arquivo .env com as devidas versões; 
+    - atualizar o arquivo `.env` com as devidas versões; 
 
        ![.env docker images versions](./media/node_docker_image_versions.png)
 
-    - se necessário limpar a base de dados (volume apontado para a pasta ./db do respectivo Node);
+    - se necessário limpar a base de dados (volume apontado para a pasta `./db ` do respectivo Node), exemplo: `./server/node{1, 2 e 3}/db`.
       ```bash
       rm -Rf ./db
       ```
+
+      > procedimento é o mesmo em ambos os cenários de instalação, para cada nó de ZK-Rollup.
+      > - Maquina virtual dedicada: localize o diretório `./db` 
 
     - inicializar novamente os serviços
       ```bash
@@ -113,6 +124,7 @@ Para que em um processo só os 3 nodes sejam implantados no host (exemplo: docke
 ----
 
 <div class="footer">
-<p><a href="./Environment_Setup.md">Configuração do ambiente Demo</a></p>
+<p><a href="./Pos_Environment_Setup.md">Finalização da configuração do ambiente demo ></a></p>
+<p><a href="./Environment_Setup.md">< Configuração do ambiente Demo e pré-configuração do ZK-Rollup</a></p>
 <p><a href="./README.md">Inicio</a></p>
 </div>

@@ -115,6 +115,6 @@ npm run test-L2-available
 ----
 
 <div class="footer">
-<p><a href="./Environment_Setup.md">Configuração do ambiente Demo</a></p>
+<p><a href="./Environment_Setup.md">Configuração do ambiente Demo e pré-configuração do ZK-Rollup</a></p>
 <p><a href="./README.md">Inicio</a></p>
 </div>
