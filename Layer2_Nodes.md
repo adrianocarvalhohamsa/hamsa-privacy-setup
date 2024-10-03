@@ -2,7 +2,9 @@
 
 # Node privado - Layer 2
 
-A Layer 2 é composta pelos ambientes privados de cada instituição, incluindo o Banco Central e SELIC. A partir dessa etapa, as configurações sugeridas devem ser aplicadas no ambiente Wian    utilizado pelo consóricio ou da instituição participante.
+A Layer 2 é composta pelos ambientes privados de cada instituição, ou seja, cada instituição participante representa um Node. 
+
+> O carregamento das imagens Docker abaixo devem ser aplicadas para implantação de cada Node.
 
 ## Arquitetura
 
@@ -18,25 +20,25 @@ O Node é constituído pelos microserviços abaixo:
 **hamsa-msft-prover:** gera uma prova do rollup para batches de transação.
 
 
-## Passos de instalação
+## Carregamento das imagens Docker no repositório de imagens local.
 
 1. Faça o download das imagens abaixo:
-   1. ```hamsa-msft-node:0.0.1.tar```
-   2. ```hamsa-msft-executor:0.0.1.tar```
-   3. ```hamsa-msft-prover:0.0.1.tar```
+   1. ```hamsa-msft-node:<version>.tar```
+   2. ```hamsa-msft-executor:<version>.tar```
+   3. ```hamsa-msft-prover:<version>.tar```
 
 2. Após realizar o download, navegue via prompt de comando para a pasta destino dos downloads acima e execute o seguintes comandos:
      
     ```bash
-    docker load -i hamsa-msft-node:0.0.1.tar
+    docker load -i hamsa-msft-node:<version>.tar
     ```
     
    ```bash
-   docker load -i hamsa-msft-executor:0.0.1.tar
+   docker load -i hamsa-msft-executor:<version>.tar
    ```
 
    ```bash
-   docker load -i hamsa-msft-prover:0.0.1.tar
+   docker load -i hamsa-msft-prover:<version>.tar
    ```
 
 
