@@ -1,6 +1,6 @@
 <img src="./assets/header.svg" width="100%" height="auto"/>
 
-# Configuração do ambiente Demo
+# Configuração do ambiente Demo e pré-configuração do ZK-Rollup
 
 1. Realize a extração do aquivo abaixo:
    
@@ -10,7 +10,8 @@
     ```bash
     cd hamsa-msft-demo
     ```
-### Configuração do arquivo hardhat.config.js
+
+<!-- ### Configuração do arquivo hardhat.config.js
 
 1. Abra o arquivo hardhat.config.js em seu software de edição de preferência e atualize-o com os IPs/URI:
    1. server_L1_besu: IP/URI do Hyperledger Besu (Layer 1);
@@ -24,7 +25,11 @@
    
     ![hardhat.config.js](./media/hardhat-config.png "Atualização dos IPs")
 
-2. Para testes já existentes nesta demo, as chaves privadas das contas na Layer 1 não precisam ser modificadas. Caso você esteja usando sua própria blockchain Layer 1, atualize o arquivo com as sua próprias chaves.
+2. Para testes já existentes nesta demo, as chaves privadas das contas na Layer 1 não precisam ser modificadas. Caso você esteja usando sua própria blockchain Layer 1, atualize o arquivo com as sua próprias chaves. -->
+
+3. Abra o arquivo hardhat.config.js em seu software de edição de preferência e atualize o endereço do Hyperledger Besu:
+   
+   - server_L1_besu: \<IP/URI do Hyperledger Besu (Layer 1)>:PORTA;
 
 
 ### Compilação dos smart contracts, Implantação do DVP-Match e Rollup na Layer 1
@@ -40,7 +45,10 @@
     ```bash
     npx hardhat compile
     ```
-2. Implantação do servidor DVP-Match, execute o comando abaixo:
+
+### Implantação do DvP Match em Hyperledger Besu
+   
+2. Implantação DVP-Match, execute o comando abaixo:
 
     ```bash
     npm run deploy-dvp-match-server-L1
@@ -49,13 +57,17 @@
     O resultado esperado será seguindo o seguindo o exemplo abaixo:
 
     ![L1MatchScAddress output](./media/L1MatchScAddress_deployed.png "Resultado da implantação do DVP-Match e Rollup")
-    ![.env DvP Match value](./media/env_DVP_Server_address.png ".env DvP Match value")
 
-3. Um endereço `L1MatchScAddress` será gerado e será necessário atualizar o arquivo `.env` existente em cada Node (instituição).
+4. Um endereço `L1MatchScAddress` será gerado e será necessário atualizar o arquivo `.env` existente em cada Node (instituição).
    - Localize no arquivo `./server/node{1,2 ou 3}/.env` a variável de ambiente: `DVP_L1MATCHSCADDRESS`;
    - Atualize o valor existente pelo valor de `L1MatchScAddress`, destacado acima;
+  
+  ![.env DvP Match value](./media/env_DVP_Server_address.png ".env DvP Match value")
 
-4. Implantação do servidor de Rollup, execute o comando abaixo:
+
+### Implantação Verificador Rollup em Hyperledger Besu
+
+1. Implantação do servidor de Rollup, execute o comando abaixo:
     ```bash
     npm run deploy-rollup-server-L1
     ```
@@ -66,7 +78,7 @@
     - Localize no arquivo `./server/node{1,2 ou 3}/.env` a variável de ambiente: `ROLLUP_VERIFYCONFIG_VERIFYCONTRACT`;
     - Atualize o valor existente pelo valor destacado acima;
 
-5. No mesmo arquivo `./server/node{1,2 ou 3}/.env` do Node, localize a variável `L1_URL` e atualize com o endereço de IP/URI do servidor Layer 1 (Hyperledger Besu utlizado).
+6. No mesmo arquivo `./server/node{1,2 ou 3}/.env` do Node, localize a variável `L1_URL` e atualize com o endereço de IP/URI do servidor Layer 1 (Hyperledger Besu utlizado).
     
     ![./server/node{1,2 ou 3}/.env file](./media/L1_server_address.png)
 
