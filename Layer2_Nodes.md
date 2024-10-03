@@ -1,42 +1,44 @@
 <img src="./assets/header.svg" width="100%" height="auto"/>
 
-# Layer 1 - Node privado
+# Node privado - Layer 2
+
+A Layer 2 é composta pelos ambientes privados de cada instituição, ou seja, cada instituição participante representa um Node. 
+
+> O carregamento das imagens Docker abaixo devem ser aplicadas para implantação de cada Node.
 
 ## Arquitetura
 
-
-> **Requisito mínimo:** *Máquina Virtual com ao menos 8 vCPUs/Cores e 16Gb de memória RAM (para ambiente de teste).*
-
+> **Requisito mínimo:** *Máquina Virtual com ao menos 8 vCPUs/core e 16Gb de memória RAM (para ambiente de teste).*
 
 
 O Node é constituído pelos microserviços abaixo:
 
-**hamsa-privacy-node:** salvar transações recebidas no pool de transações, gerenciar o ciclo de vida da transação, coordenar o fluxo de Dvp e Rollup.
+**hamsa-msft-node:** salvar transações recebidas no pool de transações, gerenciar o ciclo de vida da transação, coordenar o fluxo de Dvp e Rollup.
 
-**hamsa-privacy-executor:** executar transações através de um EVM.  
+**hamsa-msft-executor:** executar transações através de um EVM.  
 
-**hamsa-privacy-prover:** gera uma prova do rollup para batches de transação.
+**hamsa-msft-prover:** gera uma prova do rollup para batches de transação.
 
 
-## Passos de instalação
+## Carregamento das imagens Docker no repositório de imagens local.
 
 1. Faça o download das imagens abaixo:
-   1. ```hamsa-privacy-node:0.0.1.tar```
-   2. ```hamsa-privacy-executor:0.0.1.tar```
-   3. ```hamsa-privacy-prover:0.0.1.tar```
+   1. ```hamsa-msft-node:<version>.tar```
+   2. ```hamsa-msft-executor:<version>.tar```
+   3. ```hamsa-msft-prover:<version>.tar```
 
 2. Após realizar o download, navegue via prompt de comando para a pasta destino dos downloads acima e execute o seguintes comandos:
      
     ```bash
-    docker load -i hamsa-privacy-node:0.0.1.tar
+    docker load -i hamsa-msft-node:<version>.tar
     ```
     
    ```bash
-   docker load -i hamsa-privacy-executor:0.0.1.tar
+   docker load -i hamsa-msft-executor:<version>.tar
    ```
 
    ```bash
-   docker load -i hamsa-privacy-prover:0.0.1.tar
+   docker load -i hamsa-msft-prover:<version>.tar
    ```
 
 
@@ -48,6 +50,6 @@ Este comando adicionará as imagens ao repositório Docker local e as disponibil
 
 <div class="footer">
    <p><a href="./Environment_Setup.md">Configuração do ambiente Demo</a></p>
-   <p><a href="./Layer1_Besu.md">Layer 1 - Hyperledger Besu</a></p>
+   <p><a href="./Layer1_Besu.md">Hyperledger Besu - Layer 1</a></p>
    <p><a href="./README.md">Inicio</a></p>
 </div>
