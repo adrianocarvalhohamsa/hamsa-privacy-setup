@@ -2,6 +2,8 @@
 
 # <a name="layer-1---hyperledger-besu"></a> Hyperledger Besu - Layer 1
 
+> Passo opcional, caso já tenha instalado o Besu, prosseguir para o  passo [Node privado - Layer 2](./Layer2_Nodes.md)
+
 > **No caso de uso da emulação da Layer 1, o requisito mínimo para a emulação é:** \
 > *Máquina Virtual com ao menos 4 vCPUs/core e 8Gb de memória RAM* 
 
