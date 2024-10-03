@@ -35,11 +35,25 @@ O resultado semelhante a imagem acima afirma que os serviços foram inicializado
 ### Troubleshooting
 
 1) Em caso de atualização do versão das imagens, se faz necessário:
+    - descarregue as novas imagens na maquina virtual;
     - interromper os serviços;
+      ```bash
+      docker-compose down
+      ```
     - carregar as novas imagens no respositório docker da respectiva máquina virtual;
+      ```bash
+      docker load -i ./<local da imagem>hamsa-msft-{executor | node | prover}:<version>
+      ```
     - atualizar o arquivo .env com as devidas versões; 
-    - se necessário limpar a base de dados (volume apontado para a pasta ./data do respectivo Node);
+       ![.env docker images versions](./media/node_docker_image_versions.png)
+    - se necessário limpar a base de dados (volume apontado para a pasta ./db do respectivo Node);
+      ```bash
+      rm -Rf ./db
+      ```
     - inicializar novamente os serviços
+      ```bash
+      docker-compose up -d
+      ```
 
 ----
 
