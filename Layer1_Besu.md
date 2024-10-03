@@ -54,6 +54,11 @@ Já com acesso à maquina virtual realizado prossiga com os passos abaixo para a
 
 Para finaliar a configuração da camada 1 (Hyperledger Besu), utilizar os arquivos config.toml e genesis.json [veja aqui a documentação do BACEN](https://github.com/bacen/pilotord-kit-onboarding).
 
+
+## Finalização das configurações
+
+Para finaliar a configuração da camada 1 (Hyperledger Besu), utilizar os arquivos config.toml e genesis.json [veja aqui a documentação do BACEN](https://github.com/bacen/pilotord-kit-onboarding).
+
 ----
 
 <div class="footer right">
@@ -61,3 +66,4 @@ Para finaliar a configuração da camada 1 (Hyperledger Besu), utilizar os arqui
   <p><a href="./Installation.md">Instalação</a></p>
   <p><a href="./README.md">Inicio</a></p>
 </div>
+
