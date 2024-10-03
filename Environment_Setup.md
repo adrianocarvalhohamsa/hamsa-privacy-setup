@@ -15,6 +15,9 @@
    
    - server_L1_besu: \<IP/URI do Hyperledger Besu (Layer 1)>:PORTA;
 
+   
+   ![](./media/server_L1_besu%20address.png)
+
 
 ### Compilação dos smart contracts, Implantação do DVP-Match e Rollup na Layer 1
 
