@@ -51,6 +51,11 @@ Já com acesso à maquina virtual realizado prossiga com os passos abaixo para a
 
 2. Todas as vezes em que este serviço tiver seus dados apagados, deverá ser realizado um [novo deploy da DvP Match e Rollup, registrar o Hash novamente nos Nodes (Passo 2 da Compilação dos smart contracts)](./Environment_Setup.md#compilação-dos-smart-contracts-implantação-do-dvp-match-e-rollup-na-layer-1).
 
+
+## Finalização das configurações
+
+Para finaliar a configuração da camada 1 (Hyperledger Besu), utilizar os arquivos config.toml e genesis.json [veja aqui a documentação do BACEN](https://github.com/bacen/pilotord-kit-onboarding).
+
 ----
 
 <div class="footer right">
