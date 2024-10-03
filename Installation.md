@@ -10,7 +10,9 @@
 
 ![Arquivos da instalação](./media/base_files_to_install.png)
 
-[BAIXE AQUI OS ARQUIVOS ACIMA](https://drive.google.com/drive/folders/1ublgmo-kNgNhnVB7ieUWr0hL1bgmJKuf?usp=sharing)
+[BAIXE AQUI OS ARQUIVOS ACIMA](https://drive.google.com/drive/folders/1T69ctiiBasU_Eft8kwqTTJQnHM4nA1uJ?usp=drive_link)
+
+
 
 
 ----
