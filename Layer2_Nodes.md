@@ -6,25 +6,23 @@ A ZK-Rollup é composta por microsserviços e componentes, ou seja, cada institu
 
 > **Requisito mínimo:** *Máquina Virtual com ao menos 8 vCPUs/core e 16Gb de memória RAM (para ambiente de teste).*
 
-### Sobre os componentes:
+#### Sobre os componentes:
 
-**hamsa-msft-node:** salvar transações recebidas no pool de transações, gerenciar o ciclo de vida da transação, coordenar o fluxo de Dvp e Rollup.
+**hamsa-msft-node:** salvar transações recebidas no pool de transações, gerenciar o ciclo de vida da transação, coordenar o fluxo de DvP e Rollup.
 
 **hamsa-msft-executor:** executar transações através de um EVM.  
 
 **hamsa-msft-prover:** gera uma prova do rollup para batches de transação.
 
 
-## Carregamento das imagens Docker no repositório de imagens local.
+### Carregamento das imagens Docker no repositório de imagens local.
 
-1. Faça o download das imagens abaixo:
-   1. ```hamsa-msft-node:<version>.tar```
-   2. ```hamsa-msft-executor:<version>.tar```
+1. Na pasta onde foram extraídos os materiais base, certifique-se de que os arquivos abaixo estão presentes:
+   1. ```hamsa-msft-node:<version>.tar``` 
+   2. ```hamsa-msft-executor:<version>.tar``` 
    3. ```hamsa-msft-prover:<version>.tar```
 
-   [BAIXE AQUI OS ARQUIVOS ACIMA](https://drive.google.com/drive/folders/1ublgmo-kNgNhnVB7ieUWr0hL1bgmJKuf?usp=sharing)
-
-2. Após realizar o download, navegue via prompt de comando para a pasta destino dos downloads acima e execute o seguintes comandos:
+2. Com cada arquivo acima, navegue via prompt de comando para a pasta destino dos downloads acima e execute o seguintes comandos:
      
     ```bash
     docker load -i hamsa-msft-node:<version>.tar
@@ -47,6 +45,6 @@ Este comando adicionará as imagens ao repositório Docker local e as disponibil
 
 <div class="footer">
    <p><a href="./Environment_Setup.md">Configuração do ambiente Demo</a></p>
-   <p><a href="./Layer1_Besu.md">Hyperledger Besu - Layer 1</a></p>
+   <p><a href="./Layer1_Besu.md">Hyperledger Besu  - Camada 1</a></p>
    <p><a href="./README.md">Inicio</a></p>
 </div>

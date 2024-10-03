@@ -76,7 +76,7 @@
 
 <div class="footer">
 <p><a href="./Nodes_Deployment.md">Implantação dos Nodes</a></p>
-<p><a href="./Layer2_Nodes.md">Node privado - Layer 2</a></p>
+<p><a href="./Layer2_Nodes.md">ZK-Rollup - Camada 2</a></p>
 <p><a href="./README.md">Inicio</a></p>
 </div>
 

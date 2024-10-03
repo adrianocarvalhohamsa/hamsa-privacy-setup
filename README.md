@@ -19,14 +19,19 @@ Hamsa Privacy é uma solução de privacidade de ponta, construída sobre a tecn
 
 2. [Instalação](./Installation.md)
 
-3. [Hyperledger Besu - Layer 1](./Layer1_Besu.md)
+3. [Hyperledger Besu - Camada 1](./Layer1_Besu.md)
 
-4. [Node privado - Layer 2](./Layer2_Nodes.md)
+4. [ZK-Rollup - Camada 2](./Layer2_Nodes.md)
 
 5. [Configuração do ambiente Demo](./Environment_Setup.md)
 
 6. [Implantação dos Nodes](./Nodes_Deployment.md)
 
 
+## Glossário 
+
+**Camada 1**: Hyperledger Besu (camada de verificação)
+
+**Camada 2**: ZK-Rollup (camada de privacidade)
 
 <link href="./assets/style.css" rel="stylesheet"/>

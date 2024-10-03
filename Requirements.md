@@ -43,13 +43,13 @@
 
 ### Arquitetura
 
-Solução foi arquitetada para performar sob plataforma Debian.
+Solução foi arquitetada para performar sob plataforma Debian 12.
 
 
 ### Software
 
-- [Docker](https://docs.docker.com/engine/install/)
-- [Docker compose](https://docs.docker.com/compose/install/)
+- [Docker - 20.10+](https://docs.docker.com/engine/install/)
+- [Docker compose - v1.29.2+](https://docs.docker.com/compose/install/)
 - [Nodejs 20.17.0+](https://nodejs.org/en/download/package-manager)
 
 

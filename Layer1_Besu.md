@@ -2,16 +2,16 @@
 
 # <a name="layer-1---hyperledger-besu"></a> Hyperledger Besu - Camada 1
 
-> Passo opcional, caso já tenha instalado o Besu, prosseguir para o  passo [Node privado - Layer 2](./Layer2_Nodes.md)
+> Passo opcional, caso já tenha instalado o Besu, prosseguir para o  passo [ZK-Rollup - Camada 2](./Layer2_Nodes.md)
 
-> **No caso de uso da emulação da Layer 1, o requisito mínimo para a emulação é:** \
+> **No caso de uso da emulação do Hyperledger Besu, o requisito mínimo é:** \
 > *Máquina Virtual com ao menos 4 vCPUs/core e 8Gb de memória RAM* 
 
 <br/>
 
 Já com acesso à maquina virtual realizado prossiga com os passos abaixo para a instalação:
 
-1. Faça o download do arquivo ```besu-qbft-docker.zip``` e extraia seu conteúdo.
+1. Faça o download do arquivo [```besu-qbft-docker.zip```](https://stahamsaprivacy.blob.core.windows.net/hamsa-privacy-images/besu-qbft-docker.zip) e extraia seu conteúdo.
 2. Execute o comando abaixo para que o ambiente de Layer 1 esteja já disponível para os próximos passos.s
   ```bash
   cd [nome da pasta extraida]
@@ -22,8 +22,6 @@ Já com acesso à maquina virtual realizado prossiga com os passos abaixo para a
   ```bash
   docker ps --format '\nName: {{.Names}} is running:  {{.Status}} | Image: {{.Image}}\n'
   ```
-
-![listagem do serviços de Layer 1](./media/dokcer_image_files_latest.png "Listagem do serviços de Layer 1")
 
 1. Certifique-se guardar o endereço IP ou URI deste serviço que deverá ser usado nas etapas seguinte.
 
@@ -59,7 +57,7 @@ Para finaliar a configuração da camada 1 (Hyperledger Besu), utilizar os arqui
 ----
 
 <div class="footer right">
-  <p><a href="./Layer2_Nodes.md">Node privado - Layer 2</a></p>
+  <p><a href="./Layer2_Nodes.md">ZK-Rollup - Camada 2</a></p>
   <p><a href="./Installation.md">Instalação</a></p>
   <p><a href="./README.md">Inicio</a></p>
 </div>
