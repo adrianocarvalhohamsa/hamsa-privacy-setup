@@ -27,7 +27,6 @@ Hamsa Privacy é uma solução de privacidade de ponta, construída sobre a tecn
 
 6. [Implantação dos Nodes](./Nodes_Deployment.md)
 
-7. [Testes de Casos de uso](.#)
 
 
 <link href="./assets/style.css" rel="stylesheet"/>

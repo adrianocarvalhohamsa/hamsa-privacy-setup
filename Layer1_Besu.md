@@ -1,6 +1,8 @@
 <img src="./assets/header.svg" width="100%" height="auto"/>
 
-# <a name="layer-1---hyperledger-besu"></a> Hyperledger Besu - Layer 1
+# <a name="layer-1---hyperledger-besu"></a> Hyperledger Besu - Camada 1
+
+> Passo opcional, caso já tenha instalado o Besu, prosseguir para o  passo [Node privado - Layer 2](./Layer2_Nodes.md)
 
 > **No caso de uso da emulação da Layer 1, o requisito mínimo para a emulação é:** \
 > *Máquina Virtual com ao menos 4 vCPUs/core e 8Gb de memória RAM* 
@@ -21,9 +23,9 @@ Já com acesso à maquina virtual realizado prossiga com os passos abaixo para a
   docker ps --format '\nName: {{.Names}} is running:  {{.Status}} | Image: {{.Image}}\n'
   ```
 
-![listagem do serviços de Layer 1](./media/Screenshot%202024-09-16%20at%2010.37.30.png "Listagem do serviços de Layer 1")
+![listagem do serviços de Layer 1](./media/dokcer_image_files_latest.png "Listagem do serviços de Layer 1")
 
-4. Certifique-se guardar o endereço IP ou URI deste serviço que deverá ser usado nas etapas seguinte.
+1. Certifique-se guardar o endereço IP ou URI deste serviço que deverá ser usado nas etapas seguinte.
 
 
 ## Troubleshooting
@@ -48,6 +50,11 @@ Já com acesso à maquina virtual realizado prossiga com os passos abaixo para a
   ```
 
 2. Todas as vezes em que este serviço tiver seus dados apagados, deverá ser realizado um [novo deploy da DvP Match e Rollup, registrar o Hash novamente nos Nodes (Passo 2 da Compilação dos smart contracts)](./Environment_Setup.md#compilação-dos-smart-contracts-implantação-do-dvp-match-e-rollup-na-layer-1).
+
+
+## Finalização das configurações
+
+Para finaliar a configuração da camada 1 (Hyperledger Besu), utilizar os arquivos config.toml e genesis.json [veja aqui a documentação do BACEN](https://github.com/bacen/pilotord-kit-onboarding).
 
 ----
 

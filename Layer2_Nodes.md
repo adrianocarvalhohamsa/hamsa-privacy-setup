@@ -1,17 +1,12 @@
 <img src="./assets/header.svg" width="100%" height="auto"/>
 
-# Node privado - Layer 2
+# ZK-Rollup - Camada 2
 
-A Layer 2 é composta pelos ambientes privados de cada instituição, ou seja, cada instituição participante representa um Node. 
-
-> O carregamento das imagens Docker abaixo devem ser aplicadas para implantação de cada Node.
-
-## Arquitetura
+A ZK-Rollup é composta por microsserviços e componentes, ou seja, cada instituição participante terá seu próprio nó.
 
 > **Requisito mínimo:** *Máquina Virtual com ao menos 8 vCPUs/core e 16Gb de memória RAM (para ambiente de teste).*
 
-
-O Node é constituído pelos microserviços abaixo:
+### Sobre os componentes:
 
 **hamsa-msft-node:** salvar transações recebidas no pool de transações, gerenciar o ciclo de vida da transação, coordenar o fluxo de Dvp e Rollup.
 
@@ -26,6 +21,8 @@ O Node é constituído pelos microserviços abaixo:
    1. ```hamsa-msft-node:<version>.tar```
    2. ```hamsa-msft-executor:<version>.tar```
    3. ```hamsa-msft-prover:<version>.tar```
+
+   [BAIXE AQUI OS ARQUIVOS ACIMA](https://drive.google.com/drive/folders/1ublgmo-kNgNhnVB7ieUWr0hL1bgmJKuf?usp=sharing)
 
 2. Após realizar o download, navegue via prompt de comando para a pasta destino dos downloads acima e execute o seguintes comandos:
      
