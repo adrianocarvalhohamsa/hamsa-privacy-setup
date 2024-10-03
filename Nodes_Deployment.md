@@ -36,7 +36,7 @@ O resultado semelhante a imagem acima afirma que os serviços foram inicializado
 
 1) Em caso de atualização do versão das imagens, se faz necessário:
     - descarregue as novas imagens na maquina virtual;
-    
+
     - interromper os serviços;
 
       ```bash
@@ -49,6 +49,7 @@ O resultado semelhante a imagem acima afirma que os serviços foram inicializado
       ```
 
     - atualizar o arquivo .env com as devidas versões; 
+    
        ![.env docker images versions](./media/node_docker_image_versions.png)
 
     - se necessário limpar a base de dados (volume apontado para a pasta ./db do respectivo Node);
