@@ -1,28 +1,28 @@
 <img src="./assets/header.svg" width="100%" height="auto"/>
 
-# ZK-Rollup - Camada 2
+# ZK-Rollup - Layer 2
 
-A ZK-Rollup é composta por microsserviços e componentes, ou seja, cada instituição participante terá seu próprio nó.
+The ZK-Rollup is architected as a microservices-based system, where each participating institution operates an independent node.
 
-> **Requisito mínimo:** *Máquina Virtual com ao menos 8 vCPUs/core e 16Gb de memória RAM (para ambiente de teste).*
+> **Minimum requirement:** *Virtual machine with at least 8 vCPUs/cores and 16GB RAM (for testing environment).*
 
-#### Sobre os componentes:
+#### Regarding components:
 
-**hamsa-msft-node:** salvar transações recebidas no pool de transações, gerenciar o ciclo de vida da transação, coordenar o fluxo de DvP e Rollup.
+**hamsa-msft-node:** saves received transactions in the transaction pool, manages the transaction lifecycle, coordinates the DvP and Rollup flow.
 
-**hamsa-msft-executor:** executar transações através de um EVM.  
+**hamsa-msft-executor:** executes transactions through an EVM.
 
-**hamsa-msft-prover:** gera uma prova do rollup para batches de transação.
+**hamsa-msft-prover:** generates a rollup proof for transaction batches.
 
 
-### Carregamento das imagens Docker no repositório de imagens local.
+### Loading Docker images into the local image repository.
 
-1. Na pasta onde foram extraídos os materiais base, certifique-se de que os arquivos abaixo estão presentes:
-   1. ```hamsa-msft-node:<version>.tar``` 
-   2. ```hamsa-msft-executor:<version>.tar``` 
-   3. ```hamsa-msft-prover:<version>.tar```
+1. In the folder where the base materials were extracted, ensure the following files are present:
+   * ```hamsa-msft-node:<version>.tar``` 
+   * ```hamsa-msft-executor:<version>.tar``` 
+   * ```hamsa-msft-prover:<version>.tar```
 
-2. Para cada arquivo acima execute o seguintes comandos:
+2. For each file above, execute the following commands:
      
     ```bash
     docker load -i hamsa-msft-node:<version>.tar
@@ -38,13 +38,13 @@ A ZK-Rollup é composta por microsserviços e componentes, ou seja, cada institu
 
 
 
-Este comando adicionará as imagens ao repositório Docker local e as disponibilizará para os próximos passos.
+This command will add the images to your local Docker repository, making them available for subsequent steps.
 
 
 ----
 
 <div class="footer">
-   <p><a href="./Environment_Setup.md">Configuração do ambiente Demo e pré-configuração do ZK-Rollup</a></p>
-   <p><a href="./Layer1_Besu.md">Hyperledger Besu  - Camada 1</a></p>
-   <p><a href="./README.md">Inicio</a></p>
+   <p><a href="./Environment_Setup.md">Demo environment setup and ZK-Rollup pre-configuration ></a></p>
+   <p><a href="./Layer1_Besu.md">< Hyperledger Besu  - Layer 1</a></p>
+   <p><a href="./README.md">Home</a></p>
 </div>

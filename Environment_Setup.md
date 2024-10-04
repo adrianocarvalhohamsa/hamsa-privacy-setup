@@ -1,60 +1,61 @@
 <img src="./assets/header.svg" width="100%" height="auto"/>
 
-# Configuração do ambiente Demo e pré-configuração do ZK-Rollup e pré-configuração do ZK-Rollup
+# Demo environment setup and ZK-Rollup pre-configuration.
 
-1. Realize a extração do aquivo abaixo:
+1. Extract the compressed file:
    
    ```hamsa-msft-demo.zip```
 
-2. Através de linha de comando, acesse o diretório:
+2. Access the directory via command line:
     ```bash
     cd hamsa-msft-demo
     ```
 
-3. Abra o arquivo hardhat.config.js em seu software de edição de preferência e atualize o endereço do Hyperledger Besu:
+3. Open the `hardhat.config.js` file in your preferred editor and update the Hyperledger Besu address:
    
-   - server_L1_besu: \<IP/URI do Hyperledger Besu (Layer 1)>:PORTA;
+   - server_L1_besu: \<IP or URI do Hyperledger Besu (Layer 1)>:\<PORT>;
 
    
    ![](./media/server_L1_besu%20address.png)
 
 
-### Compilação dos smart contracts, Implantação do DVP-Match e Rollup na Layer 1
+### Smart contract compilation and deployment of DVP-Match and Rollup on Layer 1
 
-1. Execute os seguintes comandos para realizar instalação das dependências e compilar os smart contracts
+1. Run the following commands to install dependencies and compile smart contracts:
     
-    > instalação das dependências
+    > Install dependencies:
      ```bash
     npm i
     ```
 
-    > compilação dos smart contracts
+    > Compile smart contracts:
     ```bash
     npx hardhat compile
     ```
 
-### Implantação do DvP Match em Hyperledger Besu
-   
-2. Implantação DVP-Match, execute o comando abaixo:
+### Deploying DVP-Match on Hyperledger Besu
+
+1. To deploy DVP-Match, run the following command:
 
     ```bash
     npm run deploy-dvp-match-server-L1
     ```
 
-    O resultado esperado será seguindo o seguindo o exemplo abaixo:
+    The expected output will be similar to the following:
 
-    ![L1MatchScAddress output](./media/L1MatchScAddress_deployed.png "Resultado da implantação do DVP-Match e Rollup")
+    ![L1MatchScAddress output](./media/L1MatchScAddress_deployed.png "Deployment result of DVP-Match and Rollup")
 
-4. Um endereço `L1MatchScAddress` será gerado e será necessário atualizar o arquivo `.env` existente em cada Node (instituição).
-   - Localize no arquivo `./server/node{1,2 ou 3}/.env` a variável de ambiente: `DVP_L1MATCHSCADDRESS`;
-   - Atualize o valor existente pelo valor de `L1MatchScAddress`, destacado acima;
+2. An `L1MatchScAddress` will be generated. You will need to update the existing `.env` file in each Node (institution).
+   - Locate the environment variable `DVP_L1MATCHSCADDRESS` in the file `./server/node{1,2 or 3}/.envs`.
+   - Update the existing value with the generated `L1MatchScAddress`.
   
   ![.env DvP Match value](./media/env_DVP_Server_address.png ".env DvP Match value")
 
 
-### Implantação Verificador Rollup em Hyperledger Besu
+### Rollup Verifier Deployment on Hyperledger Besu
 
-1. Implantação do servidor de Rollup, execute o comando abaixo:
+1. To deploy the Rollup verifier, execute the command below:
+
     ```bash
     npm run deploy-rollup-server-L1
     ```
@@ -62,10 +63,9 @@
     ![Deploy Rollup Server Output](./media/rollup-server_deploy-output.png)
     ![.env file Rollup verify config deploy](./media/rollup_verify_config.png)
 
-    - Localize no arquivo `./server/node{1,2 ou 3}/.env` a variável de ambiente: `ROLLUP_VERIFYCONFIG_VERIFYCONTRACT`;
-    - Atualize o valor existente pelo valor destacado acima;
+    - Locate the environment variable `ROLLUP_VERIFYCONFIG_VERIFYCONTRACT` in the file `./server/node{1,2 or 3}/.env;` update the existing value with the value highlighted above.
 
-6. No mesmo arquivo `./server/node{1,2 ou 3}/.env` do Node, localize a variável `L1_URL` e atualize com o endereço de IP/URI do servidor Layer 1 (Hyperledger Besu utlizado).
+2. In the same file `./server/node{1,2 or 3}/.env` of the Node, locate the variable L1_URL and update it with the IP address/URI of the Layer 1 server (Hyperledger Besu that you using).
     
     ![./server/node{1,2 ou 3}/.env file](./media/L1_server_address.png)
 
@@ -74,8 +74,8 @@
 
 
 <div class="footer">
-<p><a href="./Nodes_Deployment.md">Implantação de ZK-Rollup</a></p>
-<p><a href="./Layer2_Nodes.md">ZK-Rollup - Camada 2</a></p>
+<p><a href="./Nodes_Deployment.md">ZK-Rollup Deployment ></a></p>
+<p><a href="./Layer2_Nodes.md">< ZK-Rollup - Layer 2</a></p>
 <p><a href="./README.md">Inicio</a></p>
 </div>
 

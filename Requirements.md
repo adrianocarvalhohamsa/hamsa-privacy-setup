@@ -1,6 +1,6 @@
 <img src="./assets/header.svg" width="100%" height="auto"/>
 
-# Pré-requisitos
+# Requirements
 
 ### Hardware
 
@@ -18,18 +18,18 @@
       <table class="table">
         <thead>
         <tr>
-        <th>Microsserviço</th>
-        <th>Hardware requerido</th>
+        <th>Microservice</th>
+        <th>Required hardware</th>
         </tr>
         </thead>
         <tbody>
         <tr>
         <td>L1 node</td>
-        <td>4 vCPUs | core  &amp; 8Gb de memória RAM</td>
+        <td>4 vCPUs | core  &amp; 8Gb of RAM memory</td>
         </tr>
         <tr>
         <td>L2 nodes</td>
-        <td>8 vCPUs | core  &amp; 32Gb de memória RAM (16Gb mínimo para testes)</td>
+        <td>8 vCPUs | core  &amp; 32Gb of RAM memory (16Gb minimal for tests)</td>
         </tr>
         </tbody>
       </table>
@@ -38,15 +38,13 @@
   
 </svg>
 
-<!-- | prover        | 8 core & 16 G memory  |-->
+
+### Architecture
+
+The solution is specifically designed to perform on Debian 12.
 
 
-### Arquitetura
-
-Solução foi arquitetada para performar sob plataforma Debian 12.
-
-
-### Software
+### Software components and applications
 
 - [Docker - 20.10+](https://docs.docker.com/engine/install/)
 - [Docker compose - v1.29.2+](https://docs.docker.com/compose/install/)
@@ -55,15 +53,15 @@ Solução foi arquitetada para performar sob plataforma Debian 12.
 
 <br/>
 
-> ATENÇÃO: Para a conclusão dos procedimentos a seguir, é necessário o uso de um programa de linha de comando e que o perfil tenha permissões para que os comandos sugeridos sejam executados sem restrições que comprometam a instalação e/ou execução dos testes.
+> **CAUTION:** To complete the following procedures, a command-line program is required. Additionally, the user profile must have sufficient permissions to execute the suggested commands without restrictions that could compromise the installation and/or execution of the tests.
 
 
 ----
 
 <div class="footer">
 
-  [Instalação >](Installation.md)
+  [Setup >](Installation.md)
 
-  [Início](README.md)
+  [Home](README.md)
 
 </div>

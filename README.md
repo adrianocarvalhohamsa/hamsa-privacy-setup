@@ -2,38 +2,38 @@
 
 # Hamsa Privacy built on Microsoft Zero-Knowledge Proof System (ZK-Rollup)
 
-## O que é o ZK-Rollup?
+## What's the ZK-Rollup?
 
-A solução ZK-Rollup foi projetada especificamente para a plataforma Drex no Brasil, a solução oferece proteção avançada de dados e conformidade regulatória para instituições financeiras que buscam garantir a privacidade e a segurança de transações digitais. Ele permite que os membros do consórcio utilizem os recursos de Zero-Knowledge Proof para validar transações sem revelar informações confidenciais.
+The ZK-Rollup solution was specifically designed for the Drex platform in Brazil. The solution offers advanced data protection and regulatory compliance for financial institutions seeking to ensure the privacy and security of digital transactions. It allows consortium members to use Zero-Knowledge Proof capabilities to validate transactions without revealing confidential information.
 
-### Principais Funcionalidades do Hamsa Privacy
+### Main Features of Zk-Rollup
 
-- **Tecnologia Zero-Knowledge Proof:** Utiliza provas de conhecimento zero para validar transações de forma segura, sem expor dados confidenciais.
-- **Conformidade Regulamentar:** Alinhado com os padrões locais e internacionais, garantindo que sua instituição financeira esteja sempre em conformidade.
-- **Integração com o Ecossistema Drex:** Compatível com os requisitos de tokenização e transações do Banco Central do Brasil, permitindo uma fácil integração e interoperabilidade.
+- **Zero-Knowledge Proof Technology:** Zero-Knowledge Proof Technology: Secures transactions with zero-knowledge proofs, protecting sensitive data.
+- **Conformidade Regulamentar:** Meets local and global standards for compliance.
+- **Drex Platform Integration:**  Seamlessly integrates with the Central Bank of Brazil's tokenization and transaction framework.
 
 
 ### Sumário
 
-1. [Pré-requisitos](./Requirements.md)
+1. [Requirements](./Requirements.md)
 
-2. [Instalação](./Installation.md)
+2. [Setup](./Installation.md)
 
-3. [Hyperledger Besu - Camada 1](./Layer1_Besu.md)
+3. [Hyperledger Besu - Layer 1](./Layer1_Besu.md)
 
-4. [ZK-Rollup - Camada 2](./Layer2_Nodes.md)
+4. [ZK-Rollup - Layer 2](./Layer2_Nodes.md)
 
-5. [Configuração do ambiente Demo e pré-configuração do ZK-Rollup](./Environment_Setup.md)
+5. [Demo Environment Setup and ZK-Rollup Pre-configuration](./Environment_Setup.md)
 
-6. [Implantação de ZK-Rollup](./Nodes_Deployment.md)
+6. [ZK-Rollup Deployment](./Nodes_Deployment.md)
 
-7. [Finalização da configuração do ambiente demo](./Nodes_Deployment.md)
+7. [Finalization of Demo Environment Setup](./Nodes_Deployment.md)
 
 
-## Glossário 
+## Glossary 
 
-**Camada 1**: Hyperledger Besu (camada de verificação)
+**Layer 1**: Hyperledger Besu (verification layer)
 
-**Camada 2**: ZK-Rollup (camada de privacidade)
+**Layer 2**: ZK-Rollup (privacy layer)
 
 <link href="./assets/style.css" rel="stylesheet"/>

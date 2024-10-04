@@ -1,50 +1,48 @@
 <img src="./assets/header.svg" width="100%" height="auto"/>
 
-# Implantação de ZK-Rollup
+# ZK-Rollup Deployment
 
-#### Cenários de instalação
+#### Deployment scenarios
 
-[Implantação de ZK-Rollup em máquina virtual dedicada](#starting-up-node)
+[ZK-Rollup deployment on a dedicated virtual machine instance](#starting-up-node)
 
-[Implantação de ZK-Rollup em um único servidor](#nodes-same-host)
+[ZK-Rollup deployment on a standalone physical server](#nodes-same-host)
 
 ---
 
-<!-- Após o preenchimento requerido na [etapa anterior](./Environment_Setup.md) para cada Node, cada um poderá ser inicializado: -->
+### <a name="starting-up-node"></a>Starting each Node on its designated virtual machine.
 
-### <a name="starting-up-node"></a>Inicializando cada Node em sua determinada máquina virtual.
-
-Este processo de instalação prevê que cada nó ZK-Rollup seja instaladao em uma máquian virtual diferente.
+This installation process requires each ZK-Rollup node to be installed on a different virtual machine.
 
 <br />
 
-> Ainda na pasta do demo, os parâmetros de configuração necessários para cada node são declarados em arquivos `./server/node{1,2 ou 3}/.env`.
+> Still in the demo folder, the necessary configuration parameters for each node are declared in files `./server/node{1,2 ou 3}/.env`.
 > 
-> `L1_URL` deve ser preenchido com o IP/URI do Hyperledger Besu. Exemplo: <IP | URI>:8545 \
-> `L1_CHAINID` é o `CHAINID` fornecido pelo BACEN \
-> `DVP_L1MATCHSCADDRESS` deve ter o mesmo valor nos 3 nodes \
-> `DVP_L1MATCHSUBMITTERKEYS`: Cada node deve preencher com 2 chaves privadas que estejam no arquivo `hardhat.config.js`, desde que não tenham sido usadas em outros nodes. \
-> `L1_DEPLOYERKEY`: deve ser preenchido por uma das chaves do arquivo `hardhat.config.js`, ser diferente das chaves usadas em `DVP_L1MATCHSUBMITTERKEYS` e não ter sido usada em outro nó da mesma forma.
+> `L1_URL` must be filled with the IP/URI of Hyperledger Besu. Example: <IP | URI>:<PORT> \
+> `L1_CHAINID` é o `CHAINID` provided by Central Bank of Brazil \
+> `DVP_L1MATCHSCADDRESS` must have the same value in all 3 nodes \
+> `DVP_L1MATCHSUBMITTERKEYS`: Each node must be filled with 2 private keys that are in the `hardhat.config.js` file, as long as they have not been used in other nodes. \
+> `L1_DEPLOYERKEY`: must be filled with one of the keys from the `hardhat.config.js` file, be different from the keys used in `DVP_L1MATCHSUBMITTERKEYS` and not have been used in another node in the same way.
 >
-> No arquivo `hardhat.config.js` já existem chaves privadas representando contas.
+> In the `hardhat.config.js` file, there are already private keys representing accounts.
 > 
-> ATENÇÃO: As chaves mencionadas acima devem estar no arquivo `hardhat.config.js` em `networks.[NODE SERVER | EVM].accounts`
+> **ATTENTION**: The keys mentioned above must be in the `hardhat.config.js` file in `networks.[NODE SERVER | EVM].accounts`
 
-1) Faça o upload da pasta referente ao servidor ZK-Rollup para a máquina virtual desejada por SFTP ou método adequad. Exemplo: 
+1) Upload the ZK-Rollup server folder to the desired virtual machine using SFTP or a suitable method. Example:
 
   ```bash
-  > sftp <MARQUINA VIRTUAL>
-  > put server/node1 ./<destino da maquina virtual>
+  > sftp <VIRTUAL MACHINE>
+  > put ./server/node1 ./<destination folder on the virtual machine>
   ```
 
-2) Acesse a máquina virtual remotamente (Exemplo: SSH) e navegue para o diretório com o conteúdo do upload acima.
-3) Através de acesso à linha comando dentro de cada máquina virtual e dentro da pasta 
+2) Access the virtual machine remotely (e.g., SSH) and navigate to the directory where you uploaded the content.
+3) Through the command line within each virtual machine and inside the folder:
 
     ```bash
     docker compose up -d
     ```
 
-4) Conferindo a inicialização de todos os serviços: Node, Executor e Prover (Rollup):
+4) Check the initialization of all services: Node, Executor, and Prover (Rollup):
 
     ```bash
     docker ps --format '> Name: {{.Names}} is running:  {{.Status}} | Image: {{.Image}}'
@@ -52,71 +50,85 @@ Este processo de instalação prevê que cada nó ZK-Rollup seja instaladao em u
 
     ![Services running list](./media/node_services_listing.png)
 
-O resultado semelhante a imagem acima afirma que os serviços foram inicializados.
+A result similar to the image above confirms that the services have been started.
 
-### <a name="nodes-same-host"></a>Implantação de servidores ZK-Rollup em um único servidor
+### <a name="nodes-same-host"></a>Deploying ZK-Rollup servers on a single server
 
-Este cenário de instalação prevê a implantação de todos os nós de ZK-Rollup em mesmo host.
+This installation scenario involves deploying all ZK-Rollup nodes on the same host.
 
 <br />
 
-> Ainda na pasta do demo, os parâmetros de configuração necessários estão no arquivo `.env` na raiz do diretório.
+> Still in the demo folder, the necessary configuration parameters are in the .env file at the root of the directory.
 > 
-> `L1_URL` deve ser preenchido com o IP/URI do Hyperledger Besu. Exemplo: <IP | URI>:8545 \
-> `L1_CHAINID` é o `CHAINID` fornecido pelo BACEN \
-> `DVP_L1MATCHSCADDRESS` deve ter o mesmo valor nos 3 nodes \
-> `DVP_L1MATCHSUBMITTERKEYS`: Cada node deve preencher com 2 chaves privadas que estejam no arquivo `hardhat.config.js`, desde que não tenham sido usadas em outros nodes. \
-> `NODE{1, 2 e 3}_L1_DEPLOYERKEYS`: deve ser preenchido por duas das chaves do arquivo `hardhat.config.js`, ser diferente das chaves usadas em `DVP_L1MATCHSUBMITTERKEYS` e não ter sido usada em outro nó da mesma forma. \
-> `NODE{1, 2 e 3}_DVP_L1MATCHSUBMITTERKEYS` deve conter duas chaves privadas configuradas no Hyperledger Besu através da respectiva ZK-Rollup (devem ser diferentes entre os nós)
+> `L1_URL` must be filled with the IP/URI of the Hyperledger Besu. Example: <IP | URI>:<PORT> \
+> `L1_CHAINID` is the `CHAINID` provided by Central Bank of Brazil \
+> `DVP_L1MATCHSCADDRESS` must have the same value in all three nodes \
+> `DVP_L1MATCHSUBMITTERKEYS`: Each node must be filled with two private keys that are in the `hardhat.config.js` file, as long as they have not been used in other nodes. \
+> `NODE{1, 2 e 3}_L1_DEPLOYERKEYS`: must be filled with two of the keys from the `hardhat.config.js` file, be different from the keys used in `DVP_L1MATCHSUBMITTERKEYS` and not have been used in another node in the same way. \
+> `NODE{1, 2 e 3}_DVP_L1MATCHSUBMITTERKEYS` must contain two private keys configured in Hyperledger Besu through the respective ZK-Rollup (they must be different between nodes).
 >
-> No arquivo `hardhat.config.js` já existem chaves privadas representando contas.
+> In the `hardhat.config.js` file, there are already private keys representing accounts.
 > 
-> ATENÇÃO: As chaves mencionadas acima devem estar no arquivo `hardhat.config.js` em `networks.[NODE SERVER | EVM].accounts`
+> **ATTENTION:** The keys mentioned above must be in the `hardhat.config.js` file in `networks.[NODE SERVER | EVM].accounts`.
 
-Para que em um processo só os 3 nodes sejam implantados no host (exemplo: docker local) siga os passos abaixo:
+To deploy all three nodes on the host in a single process (e.g., local docker), follow the steps below:
 
-1. Abra o arquivo `.env` localizado na raiz do diretório;
-2. Altere a variável abaixo:
-   - `L1_URL`: Endereço do servidor Hyperledger Besu;
-   - `L1_CHAINID`: CHAINID do seu ambiente Hyperledger Besu;
+
+1. Open the .env file located at the root of the directory.
+2. Change the following variable:
+   - `L1_URL`: Change the following variable;
+   - `L1_CHAINID`: `CHAINID` of your Hyperledger Besu environment;
    
-   Execute o comando abaixo para implantar todos os serviços juntos:
+   Run the following command to deploy all services together:
+   
     ```bash
     docker compose up -d
     ```
 
-    > Não esqueça de conferir se todos os serviços foram iniciados. Por exemplo: `docker ps --format 'Image: {{.Image}} | Name: {{.Names}} | Image:  {{.Image}}'`
+    > Don't forget to check if all services have started. For example: `docker ps --format 'Image: {{.Image}} | Name: {{.Names}} | Image:  {{.Image}}'`
 
 
 ### Troubleshooting
 
-1) Em caso de atualização do versão das imagens, se faz necessário:
-    - descarregue as novas imagens;
+1) In case of an image version update, it is necessary to:
 
-    - interrompa os serviços;
+    - download the new images;
+
+    - stop the services:
 
       ```bash
       docker-compose down
       ```
 
-    - carregar as novas imagens no respositório docker da respectiva máquina virtual;
+    - load the new images into the docker repository of the respective virtual machine:
+
       ```bash
-      docker load -i ./<local da imagem>hamsa-msft-{executor | node | prover}:<version>
+      docker load -i hamsa-msft-node:<version>.tar
+      ```
+        
+      ```bash
+      docker load -i hamsa-msft-executor:<version>.tar
       ```
 
-    - atualizar o arquivo `.env` com as devidas versões; 
+      ```bash
+      docker load -i hamsa-msft-prover:<version>.tar
+      ```
+
+    - update the .env file with the correct versions; 
 
        ![.env docker images versions](./media/node_docker_image_versions.png)
 
-    - se necessário limpar a base de dados (volume apontado para a pasta `./db ` do respectivo Node), exemplo: `./server/node{1, 2 e 3}/db`.
+    - if necessary, clear the database (volume pointed to the `./db` folder of the respective Node), for example: `./server/node{1, 2 and 3}/db`:
+
       ```bash
       rm -Rf ./db
       ```
 
-      > procedimento é o mesmo em ambos os cenários de instalação, para cada nó de ZK-Rollup.
-      > - Maquina virtual dedicada: localize o diretório `./db` 
+      > the procedure is the same in both installation scenarios, for each ZK-Rollup node.
+      > - Dedicated virtual machine: locate the `./db` directory 
 
-    - inicializar novamente os serviços
+    - restart the services:
+
       ```bash
       docker-compose up -d
       ```
@@ -124,7 +136,7 @@ Para que em um processo só os 3 nodes sejam implantados no host (exemplo: docke
 ----
 
 <div class="footer">
-<p><a href="./Pos_Environment_Setup.md">Finalização da configuração do ambiente demo ></a></p>
-<p><a href="./Environment_Setup.md">< Configuração do ambiente Demo e pré-configuração do ZK-Rollup</a></p>
-<p><a href="./README.md">Inicio</a></p>
+<p><a href="./Pos_Environment_Setup.md">Completion of the demo environment setup ></a></p>
+<p><a href="./Environment_Setup.md">< Demo environment setup and ZK-Rollup pre-configuration</a></p>
+<p><a href="./README.md">Home</a></p>
 </div>
